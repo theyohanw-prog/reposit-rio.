@@ -1,2 +1,2 @@
-# codigo
+# código
 obrigado por ler isso.

@@ -1,5 +1,6 @@
 nomes = ["Casa Verde", "Apto Centro", "Sobrado Sol", "Cobertura Mar", "Chacara Lago"]
 tipos = ["Casa", "Apartamento", "Sobrado", "Cobertura", "Chácara"]
+metros_quadrados = [120.5, 65.0, 150.75, 210.0, 800.0]
 precos_venda = [350000.0, 280000.0, 420000.0, 950000.0, 500000.0]
 precos_aluguel = [1800.0, 1500.0, 2300.0, 5500.0, 2800.0]
 status = ["Disponível", "Disponível", "Disponível", "Disponível", "Disponível"]
@@ -15,30 +16,28 @@ while rodando:
     print("0 - Sair")
     opcao = input("Escolha uma opção: ")
 
-   
     if opcao == "1":
         print("\n--- Propriedades ---")
         i = 0
         while i < len(nomes):
-            print(f"[{i}] {nomes[i]} ({tipos[i]})")
+            print(f"[{i}] {nomes[i]} ({tipos[i]}) - {metros_quadrados[i]:.2f} m²")
             print(f"    Venda: R$ {precos_venda[i]:.2f} | Aluguel: R$ {precos_aluguel[i]:.2f}/mês")
             print(f"    Status: {status[i]}")
             i += 1
 
-   
     elif opcao == "2":
         busca = input("Digite o nome exato da propriedade: ")
         if busca in nomes:
             pos = nomes.index(busca)
             print(f"\nEncontrada na posição {pos}:")
             print(f"{nomes[pos]} ({tipos[pos]})")
+            print(f"Área: {metros_quadrados[pos]:.2f} m²")
             print(f"Venda: R$ {precos_venda[pos]:.2f}")
             print(f"Aluguel: R$ {precos_aluguel[pos]:.2f}/mês")
             print(f"Status: {status[pos]}")
         else:
             print("Propriedade não encontrada.")
 
-    
     elif opcao == "3":
         busca = input("Nome da propriedade que deseja comprar: ")
         if busca in nomes:
@@ -56,7 +55,6 @@ while rodando:
         else:
             print("Propriedade não encontrada.")
 
- 
     elif opcao == "4":
         busca = input("Nome da propriedade que deseja alugar: ")
         if busca in nomes:
@@ -78,7 +76,6 @@ while rodando:
                 print(f"Indisponível. Status atual: {status[pos]}.")
         else:
             print("Propriedade não encontrada.")
-
 
     elif opcao == "0":
         print("Até logo!")

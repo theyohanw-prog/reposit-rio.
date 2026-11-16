@@ -181,14 +181,21 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 - Faça o primeiro commit: `docs(logbook): registro do ciclo 01`.
 </details>
 
-#### Registro do Ciclo 01 — 12/08
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+**Registro do Ciclo 01 — 12/08**
+
+1. **Desafio do ciclo:** *Escolher um aplicativo como base para o desenvolvimento de um código capaz de criar, ler, atualizar e deletar dados.*
+
+2. **O que implementei:** *https://github.com/theyohanw-prog/reposit-rio.*
+
+3. **Objeto(s) de conhecimento mobilizado(s):** *A escolha da aplicação e a criação de um repositório público para a publicação do código.*
+
+4. **Desvio ou erro encontrado + causa técnica:** *Indecisão de escolher uma aplicação por inexperiência.*
+
+5. **Decisão de ajuste + fonte:** *Busca na I.A Claude sobre aplicativos de compra e venda de propriedades.*
+
+6. **Feedback recebido e o que mudei por causa dele:** *A afirmação de que o repositório precisava ser público, e a sua transformação em público.*
+
+7. **Próximo passo:** *Implementar o código dessa aplicação.*
 
 ## 🟢 CICLO 02 — 19/08 — Variáveis, tipos de dados e entrada/saída
 
@@ -212,53 +219,60 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 ### 🧩 CAMPO 01 — Instrumento de entrada
 *Grupo 1 | Prazo segunda 16/11, 23h59 | SEM CONSULTA*
 
-**1a. Objetos de conhecimento identificados (mínimo 3, com vocabulário técnico):**
-1. _…_
-2. _…_
-3. _…_
-4. _…_ *(opcional)*
+**1a. Objetos de conhecimento identificados:**
+1. *Comandos e sintaxe em Python.*
+2. *Ordenamento e estruturação dos dados.*
+3. *Documentação e registro do projeto.*
 
-**1b. Lacunas — o que não sei e preciso descobrir (mínimo 3, com precisão técnica):**
-1. _…_
-2. _…_
-3. _…_
+**1b. Lacunas — o que não sei e preciso descobrir:**
+1. *Conhecimento sobre variáveis e seus tipos.*
+2. *Conhecimento sobre comandos e listas.*
+3. *Conhecimento sobre laços de repetição.*
 
 **1c. Hipótese inicial em até 5 linhas — com lógica da área de formação:**
 
-> _…_
+> *A hipótese inicial é de que os problemas no CRUD derivam de uma má estruturação dos dados e condicionais.*
 
 ### 🧩 CAMPO 02 — Aprofundamento pós-aula
 *AV Qualis — Grupo 1 | Segunda 16/11, 23h59*
 
 > **Preenchido depois do Campo 01, com pesquisa real. Deve ser coerente com o Campo 01. Incoerência = evidência de autoria externa.**
 
-**2a. Aprofundamento dos objetos de conhecimento (mínimo 2 referências com síntese da contribuição para a solução):**
+**2a. Aprofundamento dos objetos de conhecimento:**
 
-- **Referência 1:** _…_ — **Contribuição:** _…_
-- **Referência 2:** _…_ — **Contribuição:** _…_
+- **Referência 1:** *Pense Python 2ª Edição.* **Contribuição:** *Memorização e interpretação da sintaxe em Python.*
+- **Referência 2:** *Algoritmos, Teoria e Prática.* **Contribuição:** *Capacidade de entender como uma aplicação funciona e como deve ser organizada.*
 
 **2b. Hipótese revisada — o que mudou em relação ao Campo 01 e por quê:**
 
-> _…_
+> *A hipótese se manteve em grande parte a mesma, com o acréscimo dos comandos de repetição: os problemas iniciais do CRUD derivam de uma má estruturação dos dados e dos comandos de repetição, de uma má utilização entre as variáveis `int` e `float` e das condicionais `if` e `elif`.*
 
-**2c. Dimensionamento inicial de recursos (recurso, quantidade estimada, justificativa técnica — mínimo 3 itens):**
+**2c. Dimensionamento inicial de recursos:**
 
 | RECURSO / MATERIAL / INSUMO | QUANTIDADE ESTIMADA | JUSTIFICATIVA TÉCNICA |
 |---|---|---|
-| _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ |
+| *Horas de estudo* | *2* | *Aprender a sintaxe Python.* |
+| *Dados de teste* | *10* | *Coletar análises de pessoas que já utilizaram a aplicação original.* |
+| *Horas de estudo* | *1* | *Aprender como funciona a estrutura de implementação de dados.* |
+
+**2c. Dimensionamento inicial de recursos (recurso, quantidade estimada, justificativa técnica — mínimo 3 itens):**
+
 
 #### Registro do Ciclo 02 — 19/08
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
 
+1. **Desafio do ciclo:** *Compreender variáveis de dados para implementar no código.*
+
+2. **O que implementei:** *https://github.com/theyohanw-prog/reposit-rio./commit/a447119729d26aee03d2743cf1cfecdc21b6dd9f*
+
+3. **Objeto(s) de conhecimento mobilizado(s):** *Os 4 tipos principais de dados, int, float, string e boolean.*
+
+4. **Desvio ou erro encontrado + causa técnica:** *Desvio em relação à implementação de uma variável float, causado por desconhecimento de suas propriedades.*
+
+5. **Decisão de ajuste + fonte:** *Ajustar a variável para o tipo float, usando o livro Pense Python como fonte.*
+
+6. **Feedback recebido e o que mudei:** *Deixei o código mais legível e entendível para atualizações futuras.*
+
+7. **Próximo passo:** *Refatorar o código com novas funcionalidades.*
 ## 🟢 CICLO 03 — 26/08 — Operadores, fluxogramas e paradigmas
 
 <details>
@@ -270,13 +284,20 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 </details>
 
 #### Registro do Ciclo 03 — 26/08
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+
+1. **Desafio do ciclo:** *Entender como funcionam e implementar operadores no código.*
+
+2. **O que implementei:** *https://github.com/theyohanw-prog/reposit-rio./commit/d7e9475dad8a051212f8e2ae26e00ad0d7287c95*
+
+3. **Objeto(s) de conhecimento mobilizado(s):** *Os operadores relacionais de igualdade ==, e de comparação < >, além de um fluxograma detalhando o processo de entrada e saída dos dados.*
+
+4. **Desvio ou erro encontrado + causa técnica:** *Falha em implementar um operador relacional sobre uma variável, causado por uma confusão entre < e >.*
+
+5. **Decisão de ajuste + fonte:** *Implementar o operador da maneira correta a partir do livro Pense Python.*
+
+6. **Feedback recebido e o que mudei:** *A variável metros quadrados pertence ao tipo float e não int, alterei isso no meu código.*
+
+7. **Próximo passo:** *Refatorar o código incrementando novas funcionalidades.*
 
 ## 🟢 CICLO 04 — 02/09 — Estruturas condicionais: `if`, `elif`, `else`
 
@@ -291,13 +312,20 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 </details>
 
 #### Registro do Ciclo 04 — 02/09
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+
+1. **Desafio do ciclo:** *Implementar estruturas condicionais no código.*
+
+2. **O que implementei:** *https://github.com/theyohanw-prog/reposit-rio./blob/main/nota.py*
+
+3. **Objeto(s) de conhecimento mobilizado(s):** *As estruturas condicionais `if`, `else` e `elif`.*
+
+4. **Desvio ou erro encontrado + causa técnica:** *Erro envolvendo as condicionais e suas estruturas, causado pelo uso errado entre `else` e `elif`.*
+
+5. **Decisão de ajuste + fonte:** *A mudança da estrutura `else` para `elif` usando o livro "Pense Python".*
+
+6. **Feedback recebido e o que mudei:** *Recebi a orientação de que o comando usado nas condições estava incorreto, então corrigi usando `elif`.*
+
+7. **Próximo passo:** *Refatorar o código do CRUD usando os conhecimentos obtidos.*
 
 ---
 

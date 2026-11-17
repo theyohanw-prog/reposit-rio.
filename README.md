@@ -24,7 +24,7 @@
 | Campo | Preencha |
 |---|---|
 | **Nome do estudante** | João Guilherme Colins |
-| **Curso / Módulo** | _ex.: ADS · 2º período_ |
+| **Curso / Módulo** | ADS · 2º período_ |
 | **Unidade curricular** | Algoritmos e Programação — UnDB 2026.2 |
 | **Professor** | Rondineli Seba Salomão |
 | **App-base do meu CRUD** | _Proplestar_ |

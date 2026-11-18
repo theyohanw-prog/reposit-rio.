@@ -27,7 +27,7 @@
 | **Curso / Módulo** | ADS · 2º período_ |
 | **Unidade curricular** | Algoritmos e Programação — UnDB 2026.2 |
 | **Professor** | Rondineli Seba Salomão |
-| **App-base do meu CRUD** | _Proplestar_ |
+| **App-base do meu CRUD** | _Properstar_ |
 | **Link do meu repositório** | _https://github.com/theyohanw-prog/reposit-rio._ |
 | **Dupla de revisão (Campo 05)** | _nome do colega cujo CRUD vou revisar / que revisa o meu_ |
 | **Função neste ciclo** | _Autor do meu CRUD · Revisor do CRUD de um colega_ |

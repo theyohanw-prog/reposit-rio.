@@ -1,3 +1,4 @@
+#Properstar#
 nomes = ["Casa Verde", "Apto Centro", "Sobrado Sol", "Cobertura Mar", "Chacara Lago"]
 tipos = ["Casa", "Apartamento", "Sobrado", "Cobertura", "Chácara"]
 metros_quadrados = [120.5, 65.0, 150.75, 210.0, 800.0]

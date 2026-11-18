@@ -1,10 +1,41 @@
 #Properstar#
-nomes = ["Casa Verde", "Apto Centro", "Sobrado Sol", "Cobertura Mar", "Chacara Lago"]
-tipos = ["Casa", "Apartamento", "Sobrado", "Cobertura", "Chácara"]
-metros_quadrados = [120.5, 65.0, 150.75, 210.0, 800.0]
-precos_venda = [350000.0, 280000.0, 420000.0, 950000.0, 500000.0]
-precos_aluguel = [1800.0, 1500.0, 2300.0, 5500.0, 2800.0]
-status = ["Disponível", "Disponível", "Disponível", "Disponível", "Disponível"]
+propriedades = {
+    "Casa Verde": {
+        "tipo": "Casa",
+        "metros_quadrados": 120.5,
+        "preco_venda": 350000.0,
+        "preco_aluguel": 1800.0,
+        "status": "Disponível",
+    },
+    "Apto Centro": {
+        "tipo": "Apartamento",
+        "metros_quadrados": 65.0,
+        "preco_venda": 280000.0,
+        "preco_aluguel": 1500.0,
+        "status": "Disponível",
+    },
+    "Sobrado Sol": {
+        "tipo": "Sobrado",
+        "metros_quadrados": 150.75,
+        "preco_venda": 420000.0,
+        "preco_aluguel": 2300.0,
+        "status": "Disponível",
+    },
+    "Cobertura Mar": {
+        "tipo": "Cobertura",
+        "metros_quadrados": 210.0,
+        "preco_venda": 950000.0,
+        "preco_aluguel": 5500.0,
+        "status": "Disponível",
+    },
+    "Chacara Lago": {
+        "tipo": "Chácara",
+        "metros_quadrados": 800.0,
+        "preco_venda": 500000.0,
+        "preco_aluguel": 2800.0,
+        "status": "Disponível",
+    },
+}
 
 rodando = True
 
@@ -19,62 +50,60 @@ while rodando:
 
     if opcao == "1":
         print("\n--- Propriedades ---")
-        i = 0
-        while i < len(nomes):
-            print(f"[{i}] {nomes[i]} ({tipos[i]}) - {metros_quadrados[i]:.2f} m²")
-            print(f"    Venda: R$ {precos_venda[i]:.2f} | Aluguel: R$ {precos_aluguel[i]:.2f}/mês")
-            print(f"    Status: {status[i]}")
-            i += 1
+        for nome, dados in propriedades.items():
+            print(f"{nome} ({dados['tipo']}) - {dados['metros_quadrados']:.2f} m²")
+            print(f"    Venda: R$ {dados['preco_venda']:.2f} | Aluguel: R$ {dados['preco_aluguel']:.2f}/mês")
+            print(f"    Status: {dados['status']}")
 
     elif opcao == "2":
         busca = input("Digite o nome exato da propriedade: ")
-        if busca in nomes:
-            pos = nomes.index(busca)
-            print(f"\nEncontrada na posição {pos}:")
-            print(f"{nomes[pos]} ({tipos[pos]})")
-            print(f"Área: {metros_quadrados[pos]:.2f} m²")
-            print(f"Venda: R$ {precos_venda[pos]:.2f}")
-            print(f"Aluguel: R$ {precos_aluguel[pos]:.2f}/mês")
-            print(f"Status: {status[pos]}")
+        if busca in propriedades:
+            dados = propriedades[busca]
+            print("\nPropriedade encontrada:")
+            print(f"{busca} ({dados['tipo']})")
+            print(f"Área: {dados['metros_quadrados']:.2f} m²")
+            print(f"Venda: R$ {dados['preco_venda']:.2f}")
+            print(f"Aluguel: R$ {dados['preco_aluguel']:.2f}/mês")
+            print(f"Status: {dados['status']}")
         else:
             print("Propriedade não encontrada.")
 
     elif opcao == "3":
         busca = input("Nome da propriedade que deseja comprar: ")
-        if busca in nomes:
-            pos = nomes.index(busca)
-            if status[pos] == "Disponível":
-                print(f"Valor da compra: R$ {precos_venda[pos]:.2f}")
+        if busca in propriedades:
+            dados = propriedades[busca]
+            if dados["status"] == "Disponível":
+                print(f"Valor da compra: R$ {dados['preco_venda']:.2f}")
                 confirma = input("Confirmar compra? (s/n): ")
                 if confirma == "s":
-                    status[pos] = "Vendida"
-                    print(f"Parabéns! Você comprou {nomes[pos]}.")
+                    dados["status"] = "Vendida"
+                    print(f"Parabéns! Você comprou {busca}.")
                 else:
                     print("Compra cancelada.")
             else:
-                print(f"Indisponível. Status atual: {status[pos]}.")
+                print(f"Indisponível. Status atual: {dados['status']}.")
         else:
             print("Propriedade não encontrada.")
 
     elif opcao == "4":
         busca = input("Nome da propriedade que deseja alugar: ")
-        if busca in nomes:
-            pos = nomes.index(busca)
-            if status[pos] == "Disponível":
+        if busca in propriedades:
+            dados = propriedades[busca]
+            if dados["status"] == "Disponível":
                 meses = int(input("Por quantos meses? "))
                 if meses > 0:
-                    total = precos_aluguel[pos] * meses
+                    total = dados["preco_aluguel"] * meses
                     print(f"Total do aluguel: R$ {total:.2f} ({meses} meses)")
                     confirma = input("Confirmar aluguel? (s/n): ")
                     if confirma == "s":
-                        status[pos] = "Alugada"
-                        print(f"Você alugou {nomes[pos]} por {meses} meses.")
+                        dados["status"] = "Alugada"
+                        print(f"Você alugou {busca} por {meses} meses.")
                     else:
                         print("Aluguel cancelado.")
                 else:
                     print("Quantidade de meses inválida.")
             else:
-                print(f"Indisponível. Status atual: {status[pos]}.")
+                print(f"Indisponível. Status atual: {dados['status']}.")
         else:
             print("Propriedade não encontrada.")
 

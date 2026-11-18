@@ -9,7 +9,7 @@ status = ["Disponível", "Disponível", "Disponível", "Disponível", "Disponív
 rodando = True
 
 while rodando:
-    print("\n===== IMOBILIÁRIA =====")
+    print("\n===== PROPERSTAR =====")
     print("1 - Ver lista de propriedades")
     print("2 - Buscar propriedade por nome")
     print("3 - Comprar propriedade")
